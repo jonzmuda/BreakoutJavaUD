@@ -4,7 +4,7 @@ CPS 150 - Introduction to Programming
 ============================================
 
 TEAM MEMBERS:
-  1. [Name] - [email]
+  1. Jon Zmuda - zmudaj1@udayton.edu
   2. [Name] - [email]
   3. [Name] - [email]
 
@@ -21,6 +21,9 @@ ENHANCED FEATURES IMPLEMENTED:
 
 --------------------------------------------
 CONTRIBUTIONS:
+
+  Jon 1: Keyboard input, paddle and wall collision.
+
   [Name 1]: Implemented Paddle class, keyboard input,
             moveLeft()/moveRight(), and the start screen.
 
