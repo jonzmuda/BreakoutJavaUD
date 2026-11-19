@@ -43,9 +43,13 @@ public class Ball {
      *
      * TODO: add dx to x, and add dy to y.
      * Difficulty: Easy
+     *
+     * Jon Zmuda
      */
     public void update() {
         // TODO: move the ball by its velocity
+        this.x += dx;
+        this.y += dy;
     }
 
     /**

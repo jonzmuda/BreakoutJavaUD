@@ -47,7 +47,10 @@ public class Paddle {
      * Difficulty: Easy
      */
     public void moveLeft() {
-        // TODO: implement left movement with a left-edge boundary check
+        x -= SPEED;
+        if (x < 0) {
+            x = 0;
+        }
     }
 
     /**
@@ -59,7 +62,10 @@ public class Paddle {
      * Difficulty: Easy
      */
     public void moveRight() {
-        // TODO: implement right movement with a right-edge boundary check
+        x += SPEED;
+        if (x + WIDTH > screenWidth) {
+            x = screenWidth - WIDTH;
+        }
     }
 
     /**

@@ -179,9 +179,20 @@ public class Game extends JPanel implements ActionListener, KeyListener {
      *    life, which you handle in checkLoseCondition().)
      * Difficulty: Medium
      */
+
+
+
     private void checkWallCollisions() {
         // TODO: reverse ball direction when it hits a side or the top wall
-    }
+        int x = ball.getX();
+        int y = ball.getY();
+        //12 is ball size, 600 is width
+        if(x <= 0 || x+12 >= 600){
+            ball.bounceX();
+        }
+        if(y <= 0){
+            ball.bounceY();
+        }    }
 
     /**
      * Bounces the ball upward when it strikes the paddle.
@@ -196,6 +207,9 @@ public class Game extends JPanel implements ActionListener, KeyListener {
      */
     private void checkPaddleCollision() {
         // TODO: bounce the ball off the paddle
+        if(ball.getBounds().intersects(paddle.getBounds()) && ball.getDy() > 0){
+            ball.bounceY();
+        }
     }
 
     /**
